@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb:</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMDb.png">
+</head>
+<body>
+    <header>
+        <div class="head-block" >
+            <img class="imdb-logo" src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="error">
+            <button class="header-button"><b><span class='buttons-logo'>&#9776</span> Menu</b></button>
+            <div class="input-field">
+                <select id="search-imdb-select">
+                    <option value='all'>All <span>&#9662</span></option>
+                    <option value="titles">Titles</option>
+                    <option value="tv-episodes">TV Episodes</option>
+                    <option value="celebs">Celebs</option>
+                    <option value="companies">Companies</option>
+                    <option value="keywords">Keywords</option>
+                    <option value="advanced-search">Advanced Search</option>
+                </select>
+                <input type="text" id="search-imdb" placeholder="Search IMDb &#8981"/>
+            </div>
+            <img class="pro-button" src="https://m.media-amazon.com/images/G/01/imdbpro/logos/IMDbPro-logo-primary-reversed._CB1513032401_.png" alt="IMDbPro">
+            <div class="empty-div"> </div>
+            <button class="header-button"><b>Watchlist</b></button>
+            <button class="header-button"><b>Sign In</b></button>
+            <select class="lang-select">
+                <option value='en'>EN &#9662</option>
+                <option value="titles">UA</option>
+                <option value="tv-episodes">ESP</option>
+                <option value="celebs">IT</option>
+                <option value="companies">DE</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="main-header">What to Watch</div>
+            <div class="main-header-UA">Що Подивитись</div>
+            <div class="main-buttons">
+                <button class="main-button" id="most-popular"><b>MOST POPULAR</b></button>
+                <button class="main-button" id="top-raiting"><b>TOP RAITING</b></button>
+                <button class="main-button"><b>TOP PICKS</b></button>
+                <button class="main-button"><b>FROM YOUR WATCHLIST</b></button>
+                <button class="main-button"><b>WATCH GUIDE</b></button>
+            </div>
+
+            <div class="films-wrapper"></div>
+        </div>
+
+        <div class="search-result">
+            <div class="film-search"></div>
+        </div>
+
+    </main>
+
+    
+
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>     -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
